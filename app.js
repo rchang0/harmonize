@@ -49,29 +49,6 @@ function initFunction() {
           console.log(json);
           window.location.assign(json);
         })
-
-        // fetch('http://vision16.csail.mit.edu:8889/receive', {
-        //     method: 'POST',
-        //     body: data
-        // }).then((response) => {
-        //     console.log(response);
-        //     return response.blob()
-        // }).then((blob) => {
-        //    let el = document.createElement("a"); 
-        //     let filename = "test.mid";
-        //    // creates anchor element but doesn't add it to the DOM
-        //    el.setAttribute("download", f"{filename}") 
-        //    // make the link downloadable on click
-        //    let url = URL.createObjectUrl(blob); 
-        //    // creates a url to the retrieved file
-        //    el.href = url; // set the href attribute attribute
-        //    el.click(); 
-        // }).catch(err=>console.log(err));
-
-
-
-
-          
       }
     };
   }
