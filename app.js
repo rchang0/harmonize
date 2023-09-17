@@ -1,7 +1,7 @@
-
 document
   .getElementById("startRecording")
   .addEventListener("click", initFunction);
+
 let isRecording = document.getElementById("isRecording");
 function initFunction() {
   // Display recording
@@ -58,24 +58,5 @@ function initFunction() {
     });
   }
   startusingBrowserMicrophone(true);
-  // Stopping handler
-  document.getElementById("stopRecording").addEventListener("click", (e) => {
-    rec.stop();
-    isRecording.textContent = "Click play button to start listening";
-
-    // const audioBlob = new Blob(audioChunks, { type: "audio/wav" })
-
-    // var data = new FormData()
-    // data.append('file', audioBlob, "file")
-
-    // fetch('http://127.0.0.1:5000/receive', {
-    //     method: 'POST',
-    //     body: data
-    // }).then(
-    //   response => response.json()
-    // ).then(json => {
-    //   console.log('lalalala');
-    //   console.log(json);
-    // })
   });
 }
